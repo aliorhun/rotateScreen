@@ -2,29 +2,35 @@
 xrandr kullanarak ekranın döndürülmesini sağlayan uygulama. Yükledikten sonra aynı uygulamayı çalıştırdıkça normal ve diğer yön arasında sırası ile dönüşüm sağlar.
 
 ## Install
-> sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen && sudo chmod +x /usr/local/bin/rotateScreen
+
+```sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen && sudo chmod +x /usr/local/bin/rotateScreen```
 
 ## Usage
-Default: Left rotate <> Normal
-Default: First Screen
-> rotateScreen
+- Default: Left rotate <> Normal - Default: First Screen
 
-Another Screen Name:
-> rotateScreen VGA-1
+```rotateScreen```
 
-Another Screen Rotation:
-> rotateScreen VGA-1 right
+- Another Screen Name:
+
+```rotateScreen VGA-1```
+
+- Another Screen Rotation:
+
+```rotateScreen VGA-1 right```
 
 ## Yükleme
-> sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen && sudo chmod +x /usr/local/bin/rotateScreen
+
+```sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen && sudo chmod +x /usr/local/bin/rotateScreen```
 
 ## Kullanım
-Varsayılan: Sola Döndür <> Normal
-Varsayılan: İlk Ekran
-> rotateScreen
+- Varsayılan: Sola Döndür <> Normal - Varsayılan: İlk Ekran
 
-Özel Ekran İsmi:
-> rotateScreen VGA-1
+```rotateScreen```
 
-Ekran Döndürme Yönü:
-> rotateScreen VGA-1 right
+- Özel Ekran İsmi:
+
+```rotateScreen VGA-1```
+
+- Ekran Döndürme Yönü:
+
+```rotateScreen VGA-1 right```
