@@ -1,5 +1,12 @@
 # rotateScreen
-xrandr kullanarak ekranın döndürülmesini sağlayan uygulama. Yükledikten sonra aynı uygulamayı çalıştırdıkça normal ve diğer yön arasında sırası ile dönüşüm sağlar.
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/aliorhun/rotateScreen.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/aliorhun/rotateScreen.svg)
+![GitHub](https://img.shields.io/github/license/aliorhun/rotateScreen.svg)
+
+xrandr kullanarak ekranın döndürülmesini sağlayan uygulama. Yükledikten sonra aynı uygulamayı çalıştırdıkça normal ve diğer yön arasında sırası ile dönüşüm sağlar. 
+
+![alt text](https://user-images.githubusercontent.com/260880/56850799-fce80200-690f-11e9-80d5-c2c843f7f833.png)
 
 ## Install
 
