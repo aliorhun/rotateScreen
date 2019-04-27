@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+
+##############################
+##  Rotate screen position  ##
+##############################
+import subprocess, sys
+
+def checkRotate(displayName):
+	command="xrandr | grep \""+ displayName +" connected\""
+	proc = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+	(out, err) = proc.communicate()
+	status1 = str(out).split("(normal ")
+	status2 = str(status1[0]).split(" ")
+	if (len(status2)==5):
+		status="normal"
+	else:
+		status=status2[-2]
+	return(status)
+
+def main(args):
+
+	#default screen
+	if (len(sys.argv) > 1):
+		screen=sys.argv[1]
+	else:
+		command="xrandr | grep \" connected\" | head -1"
+		proc = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+		(out, err) = proc.communicate()
+		screen1 = str(out).split(" ")
+		screen2 = str(screen1[0]).split("'")
+		screen=screen2[1]
+
+	#default position
+	definedPosition="left"
+	if len(sys.argv) > 2:
+		position=sys.argv[2]
+	else:
+		position=definedPosition
+	
+	# current rotate status
+	rotatestatus=checkRotate(screen)
+	
+	if (rotatestatus=="normal"):
+		command="xrandr --output " + screen + " --rotate " + position
+		proc = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+		(out, err) = proc.communicate()
+	else:
+		command="xrandr --output " + screen + " --rotate normal"
+		proc = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+		(out, err) = proc.communicate()
+	return 0
+
+if __name__ == '__main__':
+	print(len(sys.argv))
+	sys.exit(main(sys.argv))
