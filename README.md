@@ -2,7 +2,7 @@
 xrandr kullanarak ekranın döndürülmesini sağlayan uygulama. Yükledikten sonra aynı uygulamayı çalıştırdıkça normal ve diğer yön arasında sırası ile dönüşüm sağlar.
 
 ## Install
-sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen
+sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen && sudo /usr/local/bin/rotateScreen
 
 ## Usage
 Default: Left rotate <> Normal
@@ -16,7 +16,7 @@ Another Screen Rotation:
 > rotateScreen VGA-1 right
 
 ## Yükleme
-sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen
+sudo wget -P /usr/local/bin/ https://raw.githubusercontent.com/aliorhun/rotateScreen/master/rotateScreen && sudo /usr/local/bin/rotateScreen
 
 ## Kullanım
 Varsayılan: Sola Döndür <> Normal
